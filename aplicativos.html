@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>POWERPOINTS</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <style>
+    body, h1, h2, h3, h4, h5 {font-family: "Poppins", sans-serif}
+    body {font-size: 16px;}
+    .w3-half img {margin-bottom: -6px; margin-top: 16px; opacity: 0.8; cursor: pointer}
+    .w3-half img:hover {opacity: 1}
+  </style>
+</head>
+<body>
+
+
+  <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar">
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Cerrar Menú</a>
+  <br>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Aprende<br>Ofimática</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Inicio</a> 
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">PowerPoint</a> 
+    <a href="word.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Word</a> 
+    <a href="EXCEL.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Excel</a> 
+    <a href="juegos y videos.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Videos y Juegos</a> 
+    
+    <!-- Botón de Autores en el menú -->
+    <button onclick="mostrarAutores()" class="w3-button w3-black">Autores</button>
+  </div>
+</nav>
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+  <!-- ... Resto del contenido ... -->
+</div>
+
+<!-- Información sobre la Unidad Educativa (Inicialmente oculta) -->
+<div id="autoresModal" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom w3-card-4">
+    <header class="w3-container w3-black"> 
+      <span onclick="cerrarAutores()" class="w3-button w3-display-topright">&times;</span>
+      <h2>Unidad Educativa Dolores Sucre</h2>
+    </header>
+    <div class="w3-container">
+      <div class="w3-row-padding w3-center">
+        <!-- Imágenes Circulares con Texto -->
+        <div class="w3-third">
+          <img src="IMG-20240205-WA0009.jpg" alt="Imagen 1" style="width:80%" class="w3-circle">
+          <p>Peralta Alvarado María 
+</p>
+        </div>
+        <div class="w3-third">
+          <img src="IMG-20240205-WA0008~2.jpg" alt="Imagen 2" style="width:80%" class="w3-circle">
+          <p>Gómez Cusme Daiyana</p>
+        </div>
+        <div class="w3-third">
+          <img src="received_1096493781666186~2.jpg" alt="Imag 3 3" style="width:80%" class="w3-circle">
+          <p>Pincay Espinoza Andy</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Menú superior en pantallas pequeñas -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>PowerPoint</span>
+</header>
+
+<!-- Efecto de superposición al abrir la barra lateral en pantallas pequeñas -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="Cerrar Menú Lateral" id="myOverlay"></div>
+
+<!-- CONTENIDO DE LA PÁGINA -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Encabezado -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-xxxlarge w3-text-red"><b>¿Qué es PowerPoint?</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+
+  <!-- Modal para imágenes a tamaño completo al hacer clic-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <p>Es un software de presentación desarrollado por Microsoft, la herramienta más popular para realizar presentaciones. Permite presentar diapositivas para transmitir información con elementos multimedia.</p>
+  <p>Es un componente del paquete ofimático Microsoft Office y permite crear presentaciones en forma de diapositivas con texto, imágenes y gráficos, presentaciones comerciales, esquemas educativos simples y mucho más. Además, permite agregar transiciones, animaciones y movimientos cinematográficos.<br>
+    Ya sea en el ámbito empresarial, educativo o personal, PowerPoint es una herramienta accesible, versátil y fácil de manejar que ayuda a crear materiales visuales de apoyo en la comunicación de diversos mensajes.</p>
+
+  
+  <!-- Diseñadores -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>¿Para qué sirve PowerPoint?</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>PowerPoint sirve para dar apoyo visual a nuestras presentaciones académicas, empresariales, organizacionales, etc. Con este programa, se pueden crear presentaciones desde cero o utilizar plantillas predefinidas para ahorrar tiempo, ofreciendo herramientas para crear, modificar y añadir formato a las diapositivas según su gusto. Nos permite editar exposiciones utilizando imágenes, textos, animaciones, audio y vídeo.</p>
+  </div>
+
+  <!-- Paquetes / Tablas de precios -->
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Funciones de PowerPoint</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p> 
+      <ol>
+        <li>Creación de presentaciones multimedia.</li>
+        <li>Creación de diapositivas con texto, imágenes, gráficos y videos.</li>
+        <li>Inserción de herramientas visuales como animaciones y transiciones.</li>
+        <li>Personalización de plantillas y temas.</li>
+        <li>Integración con otras aplicaciones de Office, como Excel y Word.</li>
+        <li>Compatibilidad con diferentes formatos de archivo, como PDF.</li>
+        <li>Capacidad para trabajar con varios usuarios en línea.</li>
+        <li>Compartir diapositivas y presentaciones con otras personas.</li>
+        <li>Creación y edición de gráficos y diagramas.</li>
+        <li>Grabar y exportar presentaciones multimedia.</li>
+      </ol>
+    </p>
+  </div>
+
+  
+  
+<!-- End page content -->
+</div>
+
+<!-- Contenedor W3.CSS -->
+<script>
+    // Funciones para mostrar/ocultar la pantalla flotante de Autores
+function mostrarAutores() {
+  document.getElementById('autoresModal').style.display='block';
+}
+
+function cerrarAutores() {
+  document.getElementById('autoresModal').style.display='none';
+}
+
+// Funciones para abrir y cerrar la barra lateral
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+// Script para abrir y cerrar la barra lateral
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Galería de imágenes modal
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Learning Office Suite</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <style>
+    body, h1, h2, h3, h4, h5 {font-family: "Poppins", sans-serif}
+    body {font-size: 16px;}
+    .w3-half img {margin-bottom: -6px; margin-top: 16px; opacity: 0.8; cursor: pointer;}
+
+    /* Colores para las secciones */
+    #powerpoint {background-color: #FF0000; padding: 20px;}
+    #word {background-color: #87CEEB; padding: 20px;}
+    #excel {background-color: #98FB98; padding: 20px;}
+  </style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+ <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar">
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Cerrar Menú</a>
+  <br>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Aprende<br>Ofimática</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Inicio</a> 
+    <a href="aplicativos.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">PowerPoint</a> 
+    <a href="word.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Word</a> 
+    <a href="EXCEL.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Excel</a> 
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Videos y Juegos</a> 
+    
+    <!-- Botón de Autores en el menú -->
+    <button onclick="mostrarAutores()" class="w3-button w3-black">Autores</button>
+  </div>
+</nav>
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+  <!-- ... Resto del contenido ... -->
+</div>
+
+<!-- Información sobre la Unidad Educativa (Inicialmente oculta) -->
+<div id="autoresModal" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom w3-card-4">
+    <header class="w3-container w3-black"> 
+      <span onclick="cerrarAutores()" class="w3-button w3-display-topright">&times;</span>
+      <h2>Unidad Educativa Dolores Sucre</h2>
+    </header>
+    <div class="w3-container">
+      <div class="w3-row-padding w3-center">
+        <!-- Imágenes Circulares con Texto -->
+        <div class="w3-third">
+          <img src="IMG-20240205-WA0009.jpg" alt="Imagen 1" style="width:80%" class="w3-circle">
+          <p>Peralta Alvarado María 
+</p>
+        </div>
+        <div class="w3-third">
+          <img src="IMG-20240205-WA0008~2.jpg" alt="Imagen 2" style="width:80%" class="w3-circle">
+          <p>Gómez Cusme Daiyana</p>
+        </div>
+        <div class="w3-third">
+          <img src="received_1096493781666186~2.jpg" alt="Imag 3 3" style="width:80%" class="w3-circle">
+          <p>Pincay Espinoza Andy</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-blue w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-blue w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Office Suite</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- PowerPoint Section -->
+  <div class="w3-container" style="margin-top:80px" id="powerpoint">
+    <h1 class="w3-xxxlarge w3-text-white"><b>PowerPoint</b></h1>
+    <div class="w3-row">
+      <!-- Photo grid (modal) -->
+  <iframe width="340" height="265" src="https://www.youtube.com/embed/Jxm7_E3e14w?si=JOC_bWXy8oIhtqbf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+    <iframe allow="fullscreen; autoplay;" allowfullscreen width="340" height="265" frameborder="0" src="https://es.educaplay.com/juego/17400863-funciones_powerpoint.html"></iframe>
+  </div>
+
+
+</center>
+    </div>
+  
+  
+  
+
+  <!-- Word Section -->
+  <div class="w3-container" id="word" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-white"><b>Word</b></h1>
+    <div class="w3-row">
+        <div class="text-container">
+    
+  </div>
+  <iframe width="340" height="260" src="https://www.youtube.com/embed/h86rlztZ_kM?si=Tn5vCz3eGcRNi9Ge" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  
+   <iframe allow="fullscreen; autoplay;" allowfullscreen width="340" height="260" frameborder="0" src="https://es.educaplay.com/juego/17400802-desafio_de_funciones_de_word.html"></iframe>
+    </div>
+      </div>
+      
+  <!-- Excel Section -->
+  <div class="w3-container" id="excel" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-white"><b>Excel</b></h1>
+    <div class="w3-row">
+        <iframe width="340" height="260" src="https://www.youtube.com/embed/nLBlXsIFk3Q?si=T8rySUzc3dzpVWdS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      
+    <iframe allow="fullscreen; autoplay;" allowfullscreen width="340" height="260" frameborder="0" src="https://es.educaplay.com/juego/17400886-quiz_de_funciones_de_EXCEL.html"></iframe>
+    </div>
+    </div>
+  
+
+</div>
+
+<script>
+     // Funciones para mostrar/ocultar la pantalla flotante de Autores
+function mostrarAutores() {
+  document.getElementById('autoresModal').style.display='block';
+}
+
+function cerrarAutores() {
+  document.getElementById('autoresModal').style.display='none';
+}
+
+// Funciones para abrir y cerrar la barra lateral
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+// Script para abrir y cerrar la barra lateral
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Galería de imágenes modal
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>

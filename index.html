@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>INICIO</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <style>
+    body, h1, h2, h3, h4, h5 {font-family: "Poppins", sans-serif}
+    body {font-size: 16px;}
+    .w3-half img {margin-bottom: -6px; margin-top: 16px; opacity: 0.8; cursor: pointer}
+    .w3-half img:hover {opacity: 1}
+  </style>
+</head>
+<body>
+
+ <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar">
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Cerrar Menú</a>
+  <br>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Aprende<br>Ofimática</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="aplicativos.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">PowerPoint</a> 
+    <a href="word.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Word</a> 
+    <a href="EXCEL.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Excel</a> 
+    <a href="juegosyvideos.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Videos y Juegos</a> 
+    
+    <!-- Botón de Autores en el menú -->
+    <button onclick="mostrarAutores()" class="w3-button w3-black">Autores</button>
+  </div>
+</nav>
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+  <!-- ... Resto del contenido ... -->
+</div>
+
+<!-- Información sobre la Unidad Educativa (Inicialmente oculta) -->
+<div id="autoresModal" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom w3-card-4">
+    <header class="w3-container w3-black"> 
+      <span onclick="cerrarAutores()" class="w3-button w3-display-topright">&times;</span>
+      <h2>Unidad Educativa Dolores Sucre</h2>
+    </header>
+    <div class="w3-container">
+      <div class="w3-row-padding w3-center">
+        <!-- Imágenes Circulares con Texto -->
+        <div class="w3-third">
+          <img src="IMG-20240205-WA0009.jpg" alt="Imagen 1" style="width:80%" class="w3-circle">
+          <p>Peralta Alvarado María 
+</p>
+        </div>
+        <div class="w3-third">
+          <img src="IMG-20240205-WA0008~2.jpg" alt="Imagen 2" style="width:80%" class="w3-circle">
+          <p>Gómez Cusme Daiyana</p>
+        </div>
+        <div class="w3-third">
+          <img src="received_1096493781666186~2.jpg" alt="Imag 3 3" style="width:80%" class="w3-circle">
+          <p>Pincay Espinoza Andy</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Menú superior en pantallas pequeñas -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Aprende Ofimática</span>
+</header>
+
+<!-- Efecto de superposición al abrir la barra lateral en pantallas pequeñas -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="Cerrar Menú Lateral" id="myOverlay"></div>
+
+<!-- CONTENIDO DE LA PÁGINA -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+  <!-- Modal para imágenes a tamaño completo al hacer clic -->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Servicios -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>¿QUÉ ES LA OFIMÁTICA?</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>La ofimática es un conjunto de técnicas, aplicaciones y herramientas informáticas que se utilizan en funciones de oficina para optimizar, automatizar, mejorar y facilitar tareas relacionadas con la creación, manipulación, transmisión y almacenamiento de información en formato digital.</p>
+    <p>Estas herramientas incluyen programas de procesamiento de texto, hojas de cálculo, software de presentación, bases de datos, herramientas de gestión de proyectos, entre otras. Microsoft Office, Google Workspace y LibreOffice son ejemplos de suites ofimáticas populares que ofrecen aplicaciones para realizar diversas actividades relacionadas con la documentación, la comunicación y la organización en un entorno de oficina.
+    </p>
+  </div>
+  
+  <!-- Diseñadores -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>CONCEPTO Y HERRAMIENTAS</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Sin duda, este concepto siempre está referido y relacionado con el trabajo de oficina y las herramientas que se utilizan para llevarlo a cabo. Algunas herramientas de ofimática son:</p>
+    <ul>
+      <li><b>Procesador de Textos:</b> Se utiliza para redactar y dar formato a cualquier tipo de texto. Ejemplos son Microsoft Word.</li>
+      <li><b>Hoja de Cálculo:</b> Su función principal es la hoja de cálculo. Ejemplos son Microsoft Excel.</li>
+      <li><b>Presentaciones:</b> Ideal para desarrollar presentaciones. Ejemplos son Microsoft PowerPoint.</li>
+    </ul>
+  </div>
+
+  <!-- El Equipo -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="IMG-20240107-WA0003.jpg" alt="John" style="width:100%">
+        <div class="w3-container"></div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="IMG-20240107-WA0005.jpg" alt="Jane" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="IMG-20240107-WA0004.jpg" alt="Mike" style="width:100%">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Contenedor W3.CSS -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px">
+<script>
+  // Funciones para mostrar/ocultar la pantalla flotante de Autores
+function mostrarAutores() {
+  document.getElementById('autoresModal').style.display='block';
+}
+
+function cerrarAutores() {
+  document.getElementById('autoresModal').style.display='none';
+}
+
+// Funciones para abrir y cerrar la barra lateral
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+// Script para abrir y cerrar la barra lateral
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Galería de imágenes modal
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>WORD</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+</head>
+<body>
+
+  <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar">
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Cerrar Menú</a>
+  <br>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Aprende<br>Ofimática</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Inicio</a> 
+    <a href="aplicativos.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">PowerPoint</a> 
+    <a href="word.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Word</a> 
+    <a href="EXCEL.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Excel</a> 
+    <a href="juegos y videos.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Videos y Juegos</a> 
+    
+    <!-- Botón de Autores en el menú -->
+    <button onclick="mostrarAutores()" class="w3-button w3-black">Autores</button>
+  </div>
+</nav>
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+  <!-- ... Resto del contenido ... -->
+</div>
+
+<!-- Información sobre la Unidad Educativa (Inicialmente oculta) -->
+<div id="autoresModal" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom w3-card-4">
+    <header class="w3-container w3-black"> 
+      <span onclick="cerrarAutores()" class="w3-button w3-display-topright">&times;</span>
+      <h2>Unidad Educativa Dolores Sucre</h2>
+    </header>
+    <div class="w3-container">
+      <div class="w3-row-padding w3-center">
+        <!-- Imágenes Circulares con Texto -->
+        <div class="w3-third">
+          <img src="IMG-20240205-WA0009.jpg" alt="Imagen 1" style="width:80%" class="w3-circle">
+          <p>Peralta Alvarado María 
+</p>
+        </div>
+        <div class="w3-third">
+          <img src="IMG-20240205-WA0008~2.jpg" alt="Imagen 2" style="width:80%" class="w3-circle">
+          <p>Gómez Cusme Daiyana</p>
+        </div>
+        <div class="w3-third">
+          <img src="received_1096493781666186~2.jpg" alt="Imag 3 3" style="width:80%" class="w3-circle">
+          <p>Pincay Espinoza Andy</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-blue w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-blue w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Microsoft Word</span>
+</header>
+
+
+
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+
+    <h1 class="w3-xxxlarge w3-text-blue"><b>¿QUE ES WORD?</b> </h1>
+
+
+
+
+
+ 
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+
+ 
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <hr style="width:50px;border:5px solid blue" class="w3-round">
+    <p>Word es un programa de procesamiento de texto desarrollado por Microsoft. Es una herramienta que permite al usuario la creación y edición de documentos de texto en un ordenador o computadora. Word forma parte de Microsoft Office, un paquete de programas que permite la realización de actividades ofimáticas. A nivel general, puede decirse que Word es una aplicación que permite redactar todo tipo de textos, eligiendo entre múltiples tipografías (fuentes) y modificando el tamaño y el color de las letras. También cuenta con un corrector ortográfico incorporado, un contador de palabras y muchas otras herramientas. Tanto a nivel personal como profesional, Word se ha convertido en una herramienta clave para muchísimos individuos. Y es que lo emplean para crear su currículum, hacer trabajos, redactar presentaciones, realizar informes, escribir cartas, entre otros</p>
+    <p>Microsoft Word permite la elaboración, edición y modificación de documentos de texto. Con Word, puedes crear y editar textos, elegir entre múltiples tipografías (fuentes) y modificar el tamaño y el color de las letras. También cuenta con un corrector ortográfico incorporado, un contador de palabras y muchas otras herramientas. A nivel personal y profesional, Word se ha convertido en una herramienta clave para muchísimos individuos. Lo emplean para crear su currículum, hacer trabajos, redactar presentaciones, realizar informes, escribir cartas, entre otros 
+    </p>
+  </div>
+ 
+  <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>PARA QUE SIRVE WORD.</b></h1>
+    <hr style="width:50px;border:5px solid blue" class="w3-round">
+  
+    <p>Microsoft Word permite la elaboración, edición y modificación de documentos de texto. Con Word, puedes crear y editar textos, elegir entre múltiples tipografías (fuentes) y modificar el tamaño y el color de las letras. También cuenta con un corrector ortográfico incorporado, un contador de palabras y muchas otras herramientas. A nivel personal y profesional, Word se ha convertido en una herramienta clave para muchísimos individuos. Lo emplean para crear su currículum, hacer trabajos, redactar presentaciones, realizar informes, escribir cartas, entre otros 
+    </p>
+    
+  </div>
+  
+
+  <!-- Packages / Pricing Tables -->
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>CUALES SON LAS FUNCIONES DE WORD</b></h1>
+    <hr style="width:50px;border:5px solid blue" class="w3-round">
+    <p>Microsoft Word es un procesador de texto que permite la elaboración, edición y modificación de documentos de texto. Word forma parte de Microsoft Office, un paquete de programas que permite la realización de actividades ofimáticas. Con Word, puedes crear y editar textos, elegir entre múltiples tipografías (fuentes) y modificar el tamaño y el color de las letras. También cuenta con un corrector ortográfico incorporado, un contador de palabras y muchas otras herramientas. A nivel personal y profesional, Word se ha convertido en una herramienta clave para muchísimos individuos. Lo emplean para crear su currículum, hacer trabajos, redactar presentaciones, realizar informes, escribir cartas, entre otros 123 .
+    <br>
+        En cuanto a las funciones específicas de Word, algunas de las más destacadas son:
+        <br>
+        <ul>
+  <li>Creación de documentos: Word te permite crear documentos de texto desde cero o a partir de plantillas predefinidas. Puedes elegir entre una amplia variedad de diseños y formatos para personalizar tus documentos.</li>
+  <li>Edición de texto: Word te permite editar el texto de tus documentos de forma sencilla e intuitiva. Puedes cambiar el tipo de letra, el tamaño, el color, la alineación, el interlineado, entre otros aspectos.</li>
+  <li>Corrección ortográfica y gramatical: Word cuenta con un corrector ortográfico y gramatical incorporado que te ayuda a detectar y corregir errores en tus documentos.</li>
+  <li>Contador de palabras: Word te permite contar las palabras de tus documentos de forma automática.</li>
+  <li>Inserción de imágenes y gráficos: Word te permite insertar imágenes y gráficos en tus documentos para ilustrar tus ideas.</li>
+  <li>Tablas y gráficos: Word te permite crear tablas y gráficos para organizar y presentar información de forma clara y concisa.</li>
+  <li>Impresión: Word te permite imprimir tus documentos de forma sencilla y rápida.</li>
+</ul>
+<h1 class="w3-xxxlarge w3-text-blue"><b>Características de Word 365:</b></h1>
+
+<ul>
+  <li>Permite al usuario escribir textos, monografías o artículos de manera simple y ordenada.</li>
+  <li>Puede utilizarse con casi cualquier sistema operativo y es uno de los procesadores de texto más usados del mundo.</li>
+  <li>Tiene una versión de escritorio, una versión web y aplicación para móvil y tabletas.</li>
+  <li>Se sirve de recursos gráficos y de texto.</li>
+  <li>Permite realizar documentos que pueden guardarse en el equipo e imprimirse.</li>
+  <li>Tiene diferentes versiones, ya que se actualiza con frecuencia.</li>
+  <li>Permite interactuar con otros programas del Paquete Office como Excel.</li>
+</ul>
+<h2>Ventajas:</h2>
+
+<ol>
+  <li><em>Facilidad de uso:</em> Word es un programa de procesamiento de textos extremadamente popular y fácil de usar. Su interfaz de usuario es intuitiva y permite a los usuarios crear y editar documentos de texto con facilidad.</li>
+
+  <li><em>Personalización:</em> Todo el texto y la mayoría de los elementos que se han insertado en el documento pueden ser personalizables. Algunas de las opciones de personalización son el color del texto, tamaño del texto y fuentes del texto.</li>
+
+  <li><em>Corrección ortográfica y gramatical:</em> Word cuenta con un corrector ortográfico y gramatical incorporado que te ayuda a detectar y corregir errores en tus documentos.</li>
+
+  <li><em>Inserción de imágenes y gráficos:</em> Word te permite insertar imágenes y gráficos en tus documentos para ilustrar tus ideas.</li>
+
+  <li><em>Tablas y gráficos:</em> Word te permite crear tablas y gráficos para organizar y presentar información de forma clara y concisa.</li>
+
+  <li><em>Impresión:</em> Word te permite imprimir tus documentos de forma sencilla y rápida.</li>
+</ol>
+
+<h2>Desventajas:</h2>
+
+<ol>
+  <li><em>Diagramación:</em> La diagramación de documentos en Word puede ser complicada y requiere cierta habilidad para lograr un resultado profesional.</li>
+
+  <li><em>Diccionario limitado:</em> El diccionario de Word puede ser limitado en algunos idiomas y no incluir todas las palabras necesarias.</li>
+
+  <li><em>Texto predictivo:</em> A veces, el texto predictivo de Word puede ser molesto y sugerir palabras incorrectas.</li>
+
+  <li><em>Fuentes de letra limitadas:</em> Aunque Word tiene una amplia variedad de fuentes de letra, algunas de ellas pueden ser poco legibles o poco profesionales.</li>
+
+  <li><em>Formato de las sangrías:</em> El formato de las sangrías en Word puede ser difícil de ajustar y puede requerir cierta habilidad para lograr un resultado profesional.</li>
+
+  <li><em>Compatibilidad:</em> A veces, los documentos creados en Word pueden tener problemas de compatibilidad al abrirse en otros programas o versiones de Word.</li>
+</ol>
+
+
+        
+    </p>
+  </div>
+  </div>
+  
+
+  
+  
+
+
+<!-- End page content -->
+</div>
+
+<script>
+   // Funciones para mostrar/ocultar la pantalla flotante de Autores
+function mostrarAutores() {
+  document.getElementById('autoresModal').style.display='block';
+}
+
+function cerrarAutores() {
+  document.getElementById('autoresModal').style.display='none';
+}
+
+// Funciones para abrir y cerrar la barra lateral
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+// Script para abrir y cerrar la barra lateral
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Galería de imágenes modal
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Título de la página</title>
+</head>
+<body>
+    
+</body>
+</html>

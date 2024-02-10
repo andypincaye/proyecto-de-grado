@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>EXCEL</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+ <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar">
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Cerrar Menú</a>
+  <br>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Aprende<br>Ofimática</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Inicio</a> 
+    <a href="aplicativos.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">PowerPoint</a> 
+    <a href="word.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Word</a> 
+    <a href="EXCEL.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Excel</a> 
+    <a href="juegos y videos.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Videos y Juegos</a> 
+    
+    <!-- Botón de Autores en el menú -->
+    <button onclick="mostrarAutores()" class="w3-button w3-black">Autores</button>
+  </div>
+</nav>
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+  <!-- ... Resto del contenido ... -->
+</div>
+
+<!-- Información sobre la Unidad Educativa (Inicialmente oculta) -->
+<div id="autoresModal" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom w3-card-4">
+    <header class="w3-container w3-black"> 
+      <span onclick="cerrarAutores()" class="w3-button w3-display-topright">&times;</span>
+      <h2>Unidad Educativa Dolores Sucre</h2>
+    </header>
+    <div class="w3-container">
+      <div class="w3-row-padding w3-center">
+        <!-- Imágenes Circulares con Texto -->
+        <div class="w3-third">
+          <img src="IMG-20240205-WA0009.jpg" alt="Imagen 1" style="width:80%" class="w3-circle">
+          <p>Peralta Alvarado María 
+</p>
+        </div>
+        <div class="w3-third">
+          <img src="IMG-20240205-WA0008~2.jpg" alt="Imagen 2" style="width:80%" class="w3-circle">
+          <p>Gómez Cusme Daiyana</p>
+        </div>
+        <div class="w3-third">
+          <img src="received_1096493781666186~2.jpg" alt="Imag 3 3" style="width:80%" class="w3-circle">
+          <p>Pincay Espinoza Andy</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-green w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-green w3-margin-right" onclick="w3_open()">☰</a>
+  <span>EXCEL</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+
+    <h1 class="w3-xxxlarge w3-text-green"><b>¿QUÉ ES EXCEL?</b></h1>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <hr style="width:50px;border:5px solid green" class="w3-round">
+    <p>Excel es un programa informático desarrollado por Microsoft. Excel es una hoja de cálculo que nos permite manipular datos numéricos y de texto en tablas formadas por la unión de filas y columnas.<br>Excel nos permite formatear, organizar y calcular datos en una hoja de cálculo. De esta manera, los analistas de datos y otros usuarios pueden hacer que la información sea más fácil de ver a medida que se agregan o modifican los datos.
+    </p>
+    <p>Excel muestra una gran cuadrícula donde cada recuadro es llamado celda y que se ordenan en filas y columnas. Los datos con los cuales trabajaremos se colocarán dentro de esas celdas.
+    </p>
+  </div>
+  
+  <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-green"><b>PARA QUÉ SIRVE EXCEL</b></h1>
+    <hr style="width:50px;border:5px solid green" class="w3-round">
+    <p> 
+        ¿Para qué sirve Excel?
+    </p>
+    <p>Excel es un programa que aumenta la rapidez en el trabajo de tabular y organizar la información. Es ideal ante la necesidad de insertar datos para manejarlos, interpretarlos y almacenarlos.
+    Un archivo de Excel se denomina "Libro", dado que está formado por una serie de hojas de cálculo. Se caracteriza por tener la extensión ".xlsx". El término puede asociarse con los libros Diario y Mayor, indispensables herramientas de la contabilidad.
+    </p>
+    <p>Excel es una potente herramienta de hojas de cálculo que ofrece una variedad de funciones. Algunas de sus capacidades clave incluyen:</p>
+
+  <ul>
+    <li>Tabulación de Datos: Permite organizar y tabular datos de manera eficiente.</li>
+    <li>Cálculos y Fórmulas: Facilita realizar cálculos automáticos con fórmulas, lo que ahorra tiempo en tareas matemáticas.</li>
+    <li>Gráficos y Visualizaciones: Puede crear gráficos y representaciones visuales de datos para un análisis más efectivo.</li>
+    <li>Análisis de Datos: Ofrece herramientas para realizar análisis estadísticos, filtrar datos y generar informes.</li>
+    <li>Automatización con Macros: Permite la automatización de tareas repetitivas mediante la creación de macros.</li>
+    <li>Tablas Dinámicas: Facilita el resumen y análisis de grandes conjuntos de datos mediante tablas dinámicas interactivas.</li>
+    <li>Programación en VBA: Permite la programación en Visual Basic for Applications (VBA) para personalizar y automatizar aún más las funciones.</li>
+    <li>Seguimiento de Gastos y Presupuestos: Útil para el seguimiento financiero personal o empresarial.</li>
+    <li>Gestión de Proyectos: Permite crear herramientas para el seguimiento y gestión de proyectos.</li>
+    <li>Planificación y Programación: Ideal para la creación de horarios, calendarios y planificación.</li>
+    <li>Bases de Datos Pequeñas: Puede utilizarse como una herramienta básica para gestionar bases de datos pequeñas.</li>
+    <li>Generación de Informes: Facilita la creación de informes detallados y personalizados.</li>
+  </ul>
+  </div>
+  
+
+  <!-- Packages / Pricing Tables -->
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-green"><b>CUÁLES SON LAS FUNCIONES DE EXCEL</b></h1>
+    <hr style="width:50px;border:5px solid green" class="w3-round">
+    <p>
+        Excel ofrece una amplia gama de funciones que se pueden utilizar para realizar cálculos y análisis de datos. Aquí te presento algunas de las funciones más comunes de Excel:
+    </p>
+    <ul>
+      <li>Elaborar tablas para registrar los datos.</li>
+      <li>Crear gráficas de los datos.</li>
+      <li>Sumar datos en casillas.</li>
+      <li>Restar datos en casillas.</li>
+      <li>Multiplicar datos en casillas.</li>
+      <li>Dividir datos en casillas.</li>
+      <li>Elevar el dato de una casilla a un exponente.</li>
+      <li>Elaborar calendarios.</li>
+      <li>Crear formatos de facturas.</li>
+      <li>Elaborar cronogramas, horarios de trabajo y escolares.</li>
+      <li>Redactar y manejar informes contables.</li>
+      <li>Calcular presupuestos de proyectos.</li>
+      <li>Insertar vínculos a textos u hojas de cálculo relacionadas.</li>
+      <li>Utilizar plantillas prediseñadas para tabular información.</li>
+      <li>Insertar imágenes en las hojas de cálculo.</li>
+      <li>Editar hojas de cálculo de otros programas y plataformas compatibles, como Open Office, KOffice y Star Office, entre otros.</li>
+    </ul>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<script>
+   // Funciones para mostrar/ocultar la pantalla flotante de Autores
+function mostrarAutores() {
+  document.getElementById('autoresModal').style.display='block';
+}
+
+function cerrarAutores() {
+  document.getElementById('autoresModal').style.display='none';
+}
+
+// Funciones para abrir y cerrar la barra lateral
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+// Script para abrir y cerrar la barra lateral
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Galería de imágenes modal
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
